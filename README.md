@@ -1,1 +1,1 @@
-# All scripts created are made with the intent to learn and understand Python
+# All scripts here were created with the intent to learn and understand Python
