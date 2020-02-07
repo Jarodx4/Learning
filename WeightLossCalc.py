@@ -1,4 +1,4 @@
-# weight script
+# This script will determine how much weight you need to lose to obtain your goal weight
 print("What is your current weight in pounds?")
 currentWeight = input()
 print("What is your current height to the nearest foot?")
