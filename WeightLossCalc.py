@@ -22,7 +22,7 @@ print(goalWeight)
 
 calories = 2500
 
-string = "You would need to eat {} calories a day at {} pounds to achieve {} pounds."
-diet = string.format(calories, currentWeight, lostWeight)
+string = "You would need to eat {} calories a day to achieve your goal weight of {} pounds."
+diet = string.format(calories, lostWeight)
 print(diet)
 # To be continued
