@@ -1,14 +1,14 @@
 # Don't use this I'm not a nutritionist
 
-currentWeight = input("What is your current weight in pounds?: ")
+currentWeight = input("What is your current weight in pounds?: ").strip()
 
-currentHeight = input("What is your current height to the nearest foot?: ")
+currentHeight = input("What is your current height to the nearest foot?: ").strip()
 
-string = "You weigh {} and you are {} feet tall."
+string = "You weigh {} pounds and you are {} feet tall."
 result = string.format(currentWeight, currentHeight)
 print(result)
 
-targetLoss = input("How much weight are you looking to lose?:" )
+targetLoss = input("How much weight are you looking to lose?:" ).strip()
 
 string = "You are looking to lose {} pounds."
 loss = string.format(targetLoss)
