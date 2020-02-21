@@ -1,22 +1,28 @@
-# This script will determine how much weight you need to lose to obtain your goal weight
-print("What is your current weight in pounds?")
-currentWeight = input()
-print("What is your current height to the nearest foot?")
-currentHeight = input()
-print(
-    "So you weigh "
-    + currentWeight
-    + " pounds"
-    + " and are "
-    + currentHeight
-    + " feet tall."
-)
-print("Are you looking to lose weight?" + " Y/N")
-input()
-print("If you chose Y then enter your target weight.")
-print('If you chose otherwise you may exit this program.')
-targetWeight = input()
-print("To achieve " + targetWeight + " pounds you would need to lose... ")
-print(
-int(currentWeight) - int(targetWeight)
-)
+# Don't use this I'm not a nutritionist
+
+currentWeight = input("What is your current weight in pounds?: ")
+
+currentHeight = input("What is your current height to the nearest foot?: ")
+
+string = "You weigh {} and you are {} feet tall."
+result = string.format(currentWeight, currentHeight)
+print(result)
+
+targetLoss = input("How much weight are you looking to lose?:" )
+
+string = "You are looking to lose {} pounds."
+loss = string.format(targetLoss)
+print(loss)
+
+lostWeight =  int(currentWeight) - int(targetLoss)
+
+string = "Your goal weight is {}."
+goalWeight = string.format(lostWeight)
+print(goalWeight)
+
+calories = 2500
+
+string = "You would need to eat {} calories a day at {} pounds to achieve {} pounds."
+diet = string.format(calories, currentWeight, lostWeight)
+print(diet)
+# To be continued
