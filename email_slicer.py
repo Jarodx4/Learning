@@ -14,6 +14,6 @@ domain = email[email.index("@") + 1 :]
 
 output = "Your username is {} and your domain is {}".format(user, domain)
 
-print(output)
-
 # display output message
+
+print(output)
